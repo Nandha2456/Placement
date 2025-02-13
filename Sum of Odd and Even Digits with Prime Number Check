@@ -1,0 +1,36 @@
+class Main {
+    public static void main(String[] args) {
+        int val = 123456;
+        int oddsum = 0;
+        int evensum = 0;
+
+        while (val > 0) {
+            int digit = val % 10;
+            val = val / 10;
+
+            if (digit % 2 == 1) {
+                oddsum += digit;
+            } else {
+                evensum += digit;
+            }
+
+            if (checkprime(digit)) {
+                System.out.println("Digit " + digit + " is a prime number.");
+            }
+        }
+
+        System.out.println("Odd sum: " + oddsum + "\tEven sum: " + evensum);
+    }
+
+    static boolean checkprime(int val) {
+        if (val <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= val / 2; i++) {
+            if (val % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
