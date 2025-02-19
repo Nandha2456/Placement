@@ -1,0 +1,11 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) 
+    {
+     Scanner Nandha= new Scanner(System.in);
+     String nickname;
+     System.out.println("How can i call you ? ");
+     nickname=Nandha.nextLine();
+     System.out.println("Welcome "+nickname+" :)");
+     }
+}
