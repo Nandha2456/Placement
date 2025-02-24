@@ -1,0 +1,41 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) 
+    {
+     Scanner x= new Scanner(System.in);
+     String nickname;
+     String Food;
+     String Ans;
+     System.out.println("How can i call you ? ");
+     nickname=x.nextLine();
+     System.out.println("\nWelcome "+nickname+" :)");
+   
+     System.out.println("\nIf you don't mine can i ask a Question ?");
+     Ans=x.nextLine();
+     if(Ans.equals("sure")){
+     System.out.println("\nWhat's your Fav Food ? ");
+     Food=x.nextLine();
+     System.out.println("\nhmmmm....Sounds tasty!");
+     System.out.println("\nI Will try "+Food+" One Day ");
+     System.out.println("\nWell Then have A Nice day!");
+     }
+     else if(Ans.equals("yes")){
+     System.out.println("\nWhat's your Fav Food ? ");
+     Food=x.nextLine();
+     System.out.println("\nhmmmm....Sounds tasty!");
+     System.out.println("\nI Will try "+Food+" One Day ");
+     System.out.println("\nWell Then have A Nice day!");
+     }
+     else if(Ans.equals("ok")){
+     System.out.println("\nWhat's your Fav Food ? ");
+     Food=x.nextLine();
+     System.out.println("\nhmmmm....Sounds tasty!");
+     System.out.println("\nI Will try "+Food+" One Day ");
+     System.out.println("\nWell Then have A Nice day!");
+     }
+     else{
+         System.out.println("Well Then have A Nice day!");
+     }
+     
+     }
+}
