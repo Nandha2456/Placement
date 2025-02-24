@@ -1,0 +1,32 @@
+public class Main {
+    public static void main(String[] args) {
+    abstract class Shape {
+    final void draw() {
+        System.out.println("Drawing shape...");
+    }
+    
+    abstract void performFunctionality();
+}
+
+class Circle extends Shape {
+    @Override
+    void performFunctionality() {
+        draw();
+        System.out.println("Drawing a circle.");
+    }
+}
+
+class Square extends Shape {
+    @Override
+    void performFunctionality() {
+        draw();
+        System.out.println("Drawing a square.");
+    }
+}
+        Shape circle = new Circle();
+        circle.performFunctionality();
+        
+        Shape square = new Square();
+        square.performFunctionality();
+    }
+}
