@@ -1,0 +1,46 @@
+public class Main {
+    public static void main(String[] args) {
+abstract class Vehicle {
+    final int wheels;
+    static String type;
+    Vehicle(int wheels) {
+        this.wheels = wheels;
+    }
+    static {
+        type = "Unknown";
+    }
+    abstract void move();
+}
+
+class Car extends Vehicle {
+
+    Car() {
+        super(4);
+    }
+
+    @Override
+    void move() {
+        System.out.println("Car is moving on " + wheels + " wheels.");
+    }
+}
+
+class Bike extends Vehicle {
+
+    Bike() {
+        super(2);
+    }
+
+    @Override
+    void move() {
+        System.out.println("Bike is moving on " + wheels + " wheels.");
+    }
+}
+        System.out.println("Vehicle type: " + Vehicle.type);
+
+        Vehicle car = new Car();
+        car.move();
+
+        Vehicle bike = new Bike();
+        bike.move();
+    }
+}
