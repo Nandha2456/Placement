@@ -6,10 +6,10 @@ class Roll_no
      int r=100;
      int i;
      for (i=0;i<r;i++){
-     Scanner Nandha=new Scanner(System.in);
+     Scanner order=new Scanner(System.in);
      System.out.println("\nEnter Your Roll Number : ");
-     String Bharathi=Nandha.nextLine();
-     long n=Long.parseLong(Bharathi);
+     String access=order.nextLine();
+     long n=Long.parseLong(access);
      if(isNumberInRange(n)) {
             System.out.println("\nACCESS GRANTED");
             System.out.println("\n[ YOUR MEMBER OF CSE C ]");
