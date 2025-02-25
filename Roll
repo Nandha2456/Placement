@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Main
+class Roll
 {
     public static void main(String[] args)
     {
@@ -9,9 +9,10 @@ class Main
      long n=Long.parseLong(Bharathi);
      
      if(isNumberInRange(n)) {
-            System.out.println("Approved");
+		    System.out.println("\n[ YOUR MEMBER OF CSE C ]");
+            System.out.println("\nACCESS GRANTED");
      }else{
-        System.out.println("denied");
+        System.out.println("\nACCESS DENIED");
      }
     }
      public static boolean isNumberInRange(long n){
