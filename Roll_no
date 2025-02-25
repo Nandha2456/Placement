@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Roll_no
+{
+    public static void main(String[] args)
+    {
+     int r=100;
+     int i;
+     for (i=0;i<r;i++){
+     Scanner Nandha=new Scanner(System.in);
+     System.out.println("\nEnter Your Roll Number : ");
+     String Bharathi=Nandha.nextLine();
+     long n=Long.parseLong(Bharathi);
+     if(isNumberInRange(n)) {
+            System.out.println("\nACCESS GRANTED");
+            System.out.println("\n[ YOUR MEMBER OF CSE C ]");
+     }else{
+        System.out.println("\nACCESS DENIED");
+     }}
+    }
+     public static boolean isNumberInRange(long n){
+        return n>=720722104126L && n<=720722104189L;
+    }
+}
