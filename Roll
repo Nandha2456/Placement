@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class Main
+{
+    public static void main(String[] args)
+    {
+     Scanner Nandha=new Scanner(System.in);
+     String Bharathi=Nandha.nextLine();
+     long n=Long.parseLong(Bharathi);
+     
+     if(isNumberInRange(n)) {
+            System.out.println("Approved");
+     }else{
+        System.out.println("denied");
+     }
+    }
+     public static boolean isNumberInRange(long n){
+        return n>=720722104126L && n<=720722104189L;
+    }
+}
+
