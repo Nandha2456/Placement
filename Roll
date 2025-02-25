@@ -4,6 +4,7 @@ class Main
     public static void main(String[] args)
     {
      Scanner Nandha=new Scanner(System.in);
+     System.out.println("Enter Your Roll Number : ");
      String Bharathi=Nandha.nextLine();
      long n=Long.parseLong(Bharathi);
      
@@ -17,4 +18,3 @@ class Main
         return n>=720722104126L && n<=720722104189L;
     }
 }
-
