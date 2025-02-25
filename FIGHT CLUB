@@ -1,0 +1,45 @@
+import java.util.Scanner;
+class Fight_Club
+{
+    public static void main(String[] args)
+    {
+     int r=100;
+     int i;
+     for (i=0;i<r;i++){
+     Scanner Fight=new Scanner(System.in);
+     System.out.println("\nEnter Your Roll Number : ");
+     String Club=Fight.nextLine();
+     long x=Long.parseLong(Club);
+     if(x==720722104131L) {
+            System.out.println("\nACCESS GRANTED");
+            System.out.println("\nWELCOME TO THE FIGHT CLUB");
+            System.out.println("\nPOSITION : ");
+            System.out.println("\n[ LEADER OF FIGHT CLUB ]");
+            break;
+     }else if(x==720722104186L){
+         System.out.println("\nACCESS GRANTED");
+         System.out.println("\nWELCOME TO THE FIGHT CLUB");
+         System.out.println("\nPOSITION : ");
+         System.out.println("\n[ CO LEADER OF FIGHT CLUB ]");
+         break;
+         
+     }else if(x==720722104181L){
+         System.out.println("\nACCESS GRANTED");
+         System.out.println("\nWELCOME TO THE FIGHT CLUB");
+         System.out.println("\nPOSITION : ");
+         System.out.println("\n[ CO LEADER OF FIGHT CLUB ]");
+         break;
+         
+     }else if(x==720722104082L){
+         System.out.println("\nACCESS GRANTED");
+         System.out.println("\nWELCOME TO THE FIGHT CLUB");
+         System.out.println("\nPOSITION : ");
+         System.out.println("\n[ MEMBER OF FIGHT CLUB ]");
+         break;
+         
+     }
+        else{
+        System.out.println("\nACCESS DENIED");
+     }}
+    }
+}
