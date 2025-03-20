@@ -1,7 +1,6 @@
-class firstMissingPositive {
+class FirstMissingPositive {
     public int firstMissingPositive(int[] nums) {
-               int n = nums.length;
-
+        int n = nums.length;
 
         for (int i = 0; i < n; i++) {
             if (nums[i] <= 0 || nums[i] > n) {
@@ -22,5 +21,11 @@ class firstMissingPositive {
             }
         }
         return n + 1;
+    }
+
+    public static void main(String[] args) {
+        FirstMissingPositive obj = new FirstMissingPositive();
+        int[] nums = {3, 4, -1, 1};
+        System.out.println("The first missing positive number is: " + obj.firstMissingPositive(nums));
     }
 }
