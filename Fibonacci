@@ -1,0 +1,18 @@
+import java.util.*;
+class fibonacci
+{
+    public static void main(String[] s){
+        Scanner fibo=new Scanner(System.in);
+        System.out.print("Enter terms for Fibonacci series : ");
+        int term=fibo.nextInt();
+        System.out.println("The Fibonacci series with "+term+" Terms : ");
+        int first=0,second=1;
+        for(int i=0;i<=term;i++){
+            System.out.print(first+" ");
+            int x =first+second;
+            first=second;
+            second=x;
+        }
+    }
+        
+    }
